@@ -136,26 +136,49 @@ Allowing for the inclusion of different control access systems can help to provi
 									<header class="major">
 										<h2>Unit 3: Programming Languages: History, Concepts & Design </h2>
 									</header>
-									<p>The third unit discusses the different types of UML diagrams and the importance of each of them, most importantly the class diagram. The class diagram is essential to be understanding on how to implement it as it is heavily involved in OOP coding. The third unit also provides a key understanding into the different stages of software development and the overall system design. </p>								
-									
-								<h3><u> Artefact :UML and development life cycles </u></h3>
-									<p>UML is a modelling technique that shows the step wise details of components involved with the development of a system. UML models contain elements such as the use actors, classes and packages involved in a project. It is used to show visually a specific perspective. The two main types of UML diagrams are structural and behavioural diagrams. Structural diagrams show the different  elements present in the system while behavioural diagrams show the how the object in the system interact with each other to create a functioning system. </p>
-									<p>Use case diagram is utilized at the requirement gathering stage of development. This is in order to identify the different scenarios present in the system. </p>								
-									<p>Class diagram are used during the design stage to represent the different classes and objects present as well as the relationships between them. </p>								
-									<p>Sequence diagrams are used during the development stage to show the different interactions between objects or components present in the system and how these occur. </p>								
-									<p>Activity diagrams are used during the both the requirement and packaging stage to show flow of activities and decision paths present in the system. </p>
-									<p>State diagrams are useful at any stage of development except the final packing stage. It is used the model the behaviour of object in the system. This shows the different states of an object or component can be in and the events that cause these changes.</p>								
-								<p><u>Below shows a state machine diagram made for a washing machine system: </u></p>
-								<span class="image main"><img src="pictures/OOUnit3.png" alt="" /></span>
-								<P><b><i> References: Jacobson, I., Rum baugh, J. & Booch, G., (2004). The Unified Modeling Language Reference Manual. 2 ed.</p></b></i>
-									<br>
-								<h3><u>Discussion Forum</u></h3>
-								<p><u> Summary Post</u></p>
-									<p>My initial post outlined the ranking for which I believed best suited the impact of the eleven key assets identified in the paper by Padhy et al, which affect the reusability of object-oriented software. My ranking consisted of the top six most important factor and the remaining 5 were deemed as less impactful. After reviewing the views of my peers in regards to this topic the general consensus was that is seemed to be arbitrary to rank the individual factors based on their merits in isolation. This is due to in reality the factors are applied together to make the biggest impact on reusability. It is also clear that it depends on an individual’s perspective on which factors present the most value as amongst my peers the lists generated were all unique. Although the general consensus is that requirement analysis is the most impactful factor. 
-I believe that in my initial post I discounted the other unranked 5 factors, as I only saw basic implications for each of these however test cases seemingly has a larger impact than I initially gave it. This is due to my focus on development rather than user experience and accessibility where a good and effective testing plan will help to create the best possible software, that as a whole can be reused with minor changes in the future. </p>
-									<p>Overall the article by Padhy et al, has improved my understanding of the complex nature of software development having to account for not just the current project but how aspects can be  reused in order to streamline future projects. </p>										
-									<P><b><i> References: Padhy, N., Satapathy, S., & Singh, R.P. (2018) 'State-of-the-Art Object-Oriented Metrics and Its Reusability: A Decade Review' </i></b></P>								
-									<br>	
+									<p>The third unit discusses the fundamental concepts of a Programming languages how they became the primary tool of computer scientist while also providing an investigating the history and design. </p>								
+									<p> Programming languages have evolved over time to meet the changing needs of technology and software development. The earliest programming language was machine language, which used binary code to communicate with computers. In the 1950’s, Fortran was developed as the first high-level programming language. Fast forward to the 1990’s and Java was developed as a widely used programming language designed to be platform-independent, meaning it can run on any device. These three milestones in programming language development mark significant advancements in the field and have paved the way for the development of hundreds of programming languages that exist today. </p>
+						<p><b><i> References: Hp (2022) Computer history: A timeline of computer programming languages, HP® Tech Takes. HP. Available at: https://www.hp.com/us-en/shop/tech-takes/computer-history-programming-languages </i></b></p>
+						
+						
+						<h3><u> Artefact: Secure Programming Languages</u></h3>
+						<p><u> 	What factors determine whether a programming language is secure or not? </u></p>
+						<p>There are several important factors that can determine whether a programming language is secure or not. Firstly the memory management of a programming language. If it provides automatic memory management, such as garbage collection, it can help prevent many security vulnerabilities related to memory allocation and deallocation. When a programming language provides strong input validation capabilities it can help prevent injection attacks, such as SQL injection and cross-site scripting (XSS). A programming language that can provide robust error handling mechanisms can help prevent runtime errors and buffer overflows that can be exploited by attackers. Some programming languages provide built-in security features, such as encryption libraries and authentication mechanisms that can help prevent various types of attacks. </p>
+						<p> Overall, the security of a programming language depends on a combination of factors, including the language's design and implementation, the available security tools and libraries, and the skills and practices of developers who use the language to build software. </p>
+						<br>
+						<p><u> Could Python be classed as a secure language? </u></p>
+						<p> Python, like any other programming language, has some security strengths and weaknesses to be considered when assessing whether Python can be classified as a secure language: Python provides automatic memory management, which can help prevent many memory-related vulnerabilities, such as buffer overflows. Python also provides a range of built-in input validation mechanisms, such as regular expressions and string methods, which can help prevent common input-related attacks, such as SQL injection and XSS. Python also provides robust error handling mechanisms, such as try-except blocks which can help prevent runtime errors that can be exploited by attackers. Python also provides several built-in security features, such as the hashlib module for encryption, the ssl module for secure socket layers, and the hmac module for message authentication. </p>
+						<p> In conclusion, Python can be classified as a relatively secure language, especially when compared to some other programming languages. However, as with any language, the security of Python applications ultimately depends on the skills and practices of the developers who use the language to build software. </p>
+						<br>
+						<p><u> Discuss if Python would be a better language to create secure operating systems than C. </u></p>
+						<p> Python is a high-level programming language, while C is a low-level programming language. As such, both languages have different strengths and weaknesses when it comes to creating secure operating systems. </p>						
+						<p> C gives developers more control over memory management, which can be beneficial when creating an operating system. However, the manual memory management in C can also lead to buffer overflows, which are a common source of security vulnerabilities. Python's automatic memory management can help prevent many memory-related vulnerabilities, but it also means that developers have less control over memory management.
+Python has a range of built-in input validation mechanisms, while in C, input validation must be implemented manually. Python's input validation mechanisms can help prevent common input-related attacks. Python has robust error handling mechanisms, such as try-except blocks, that can help prevent runtime errors that can be exploited by attackers. C also has error handling mechanisms, but they can be more complex and may require more developer expertise. Python provides several built-in security features, such as the hashlib module for encryption and the hmac module for message authentication while C, on the other hand, does not provide any built-in security features. </p>
+						<p> Overall, both Python and C have their advantages and disadvantages when it comes to creating secure operating systems. While Python's automatic memory management and built-in security features can help prevent certain types of security vulnerabilities, C's manual memory management and greater control over hardware can be beneficial in creating an operating system that is highly secure. Ultimately, the choice of language depends on the specific security requirements of the operating system and the skills and expertise of the developers who will be working on the project. </p>
+						<p><b><i> References: Pillai, A.B. (2017) “Chapter 2. Chapter 6. Chapter 7. Chapter 8.,” in Software architecture with python. Packt Publishing Limited. </i></b></p>
+						<br>
+						<h3><u> Discussion Forum: Summary post </u></h3>	
+						<p> Broken access control is a coding weakness that occurs when an application fails to restrict access to resources or functionality based on user roles or privileges. This can allow unauthorized users to access sensitive information or perform actions they are not authorized to do. (Dalton et al, 2009) OWASP is a non-profit organization that provides information and tools for improving the security of web applications. OWASP has a list of the top 10 web application security risks, and broken access control is one of them. (OWASP, 2022)
+							Other weaknesses identified by OWASP that relate to broken access control include: </p>
+						<ol>
+							<li> Insufficient Authentication/Authorization: This weakness occurs when an application does not properly authenticate or authorize users, which can lead to unauthorized access. </li>
+							<li> Injection: Injection attacks can be used to bypass access control by manipulating input data to trick the application into granting access to unauthorized users </li>
+							<li> Cross-Site Scripting (XSS): XSS attacks can be used to bypass access control by injecting malicious code into a web page, which can then be executed by an unsuspecting user who has access to sensitive information or functionality. (OWASP, 2022) </li>
+							
+						</ol>
+						<p> Broken access control can occur due to several reasons, such as the improper configuration of access controls. Developers may not properly configure access controls for different users. This can result in users having more privileges than they should, or having access to sensitive information they should not be able to see. Also if an application fails to properly validate user input, attackers can manipulate input parameters to bypass access controls and gain unauthorized access. (Dalton et al, 2009) Overall, it is essential for developers to properly implement access control mechanisms to prevent unauthorized access to sensitive information or functionality. Proper validation of user input, monitoring of access attempts, and configuration of access controls for different user roles are crucial for mitigating the risks associated with broken access control. </p>
+						<p> Below shows a modification to the original Broken access diagram from unit 1 this was updated with the guidance and comments from module peers and tutor. </p>
+					<span class="image main"><img src="pictures/Unit3.png" alt="" /></span>
+						
+						<p><b><i> References: </p></b></i>
+									<li>Dalton, M., Zeldovich, N. and Kozyrakis, C. (2009) Nemesis: Preventing authentication & access control vulnerabilities in ... Available at: https://people.csail.mit.edu/nickolai/papers/dalton-nemesis.pdf </li>
+						<li> Hassan,M et al. (2018). Quantitative Assessment on Broken Access Control Vulnerability in Web Applications </li>
+				<li> OWASP (2022) Broken access control, Broken Access Control | OWASP Foundation. Available at: https://owasp.org/www-community/Broken_Access_Control  </li>
+				<li> Priebe, T. et al. (2004) “A pattern system for access control,” IFIP International Federation for Information Processing, pp. 235–249. Available at: https://doi.org/10.1007/1-4020-8128-6_16 </li>
+				
+					
+						<br>
+								
 										
 									<hr />
 									<header class="major">
