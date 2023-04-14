@@ -252,19 +252,22 @@ Python has a range of built-in input validation mechanisms, while in C, input va
 									<header class="major">
 										<h2>Unit 5: An Introduction to Testing </h2>
 									</header>
-								<p>The fifth unit focuses further on developing the concept of classes. It introduces and further develops the concepts of classes, inheritance and data structures. Specifically polymorphism and variable constructors developed upon, these concepts provide the ability to execute class methods based on object creation.  </p>									
-									
-									<h3><u>Artefact: Polymorphism </u></h3>
-								
-									<p> Polymorphism is a fundamental concept of object oriented programming that allows different types of objects to be treated as if they are the same type. Therefore a single method or function can be used to operate different objects as long as they share the common super class. This allows for code reusability and modularity key concept of OOP. </p>
-									<p><u> The following python program shows the use of polymorphism for a program usable within a system for the driverless car: </u></p>	
-									<span class="image main"><img src="pictures/OOUnit5.png" alt="" /></span>
-									<p><a href="https://github.com/dheeranc/OOP-coding-/blob/source/navigation%20polymorphism">source code.</a></p>
-									<br>
-									
-						
-								
-								<hr />
+								<p>The fifth unit of the module focuses on the testing of software for both quality and security. These include the consideration of the practices which are used in industry and are reinforced from a practical perspective through harnessing the tools that are available in Python to automated testing.</p>									
+								<br>
+	<h3><u> Artefact: Cyclomatic Complexity </u></h3>	
+	<p><u> The Cyclomatic Complexity is commonly considered in modules on testing the validity of code design today. However, in your opinion, should it be? Does it remain relevant today? Specific to the focus of this module, is it relevant in our quest to develop secure software? </u></p>
+	<p> Cyclomatic complexity is a measure of the complexity of a program that is commonly used in software testing to assess the quality of the code design. It calculates the number of independent paths through a program's source code, and can help to identify potential errors or bugs in the code. (Shepperd, 1988) </p>
+	<p> In my opinion, cyclomatic complexity remains relevant today, especially in the development of secure software. A high cyclomatic complexity indicates that the program may have more complex control flow and decision-making, which can lead to a higher likelihood of errors or vulnerabilities that could be exploited by attackers. By keeping cyclomatic complexity low, developers can make their code easier to understand, maintain and test.(Gujar, 2019) It can also help to reduce the likelihood of bugs or security vulnerabilities. However, cyclomatic complexity is not the only measure of code quality, and it should not be used as the sole metric for assessing software security. Other factors, such as the use of secure coding practices, proper data validation, and thorough testing, are also essential in developing secure software. </p>
+	<p> In summary, while cyclomatic complexity remains relevant today, it should not be the only metric for assessing code quality or security. Developers should also employ other best practices in secure coding to ensure that their software is safe and reliable. </p>
+	<br>
+	<p><b><i> References: </p></b></i>
+									<li>Gujar, C.R. (2019) “Use and analysis on cyclomatic complexity in software development,” International Journal of Computer Applications Technology and Research, 8(5), pp. 153–156. Available at: https://doi.org/10.7753/ijcatr0805.1002. </li>
+						<li>Shepperd, Martin. (1988). A Critique of Cyclomatic Complexity as a Software Metric. Software Engineering Journal. 3. 30 - 36. 10.1049/sej.1988.0003.</li>
+			
+	
+	
+	
+	<hr />
 									<header class="major">
 										<h2>Unit 6: Using Linters to Support Python Testing </h2>
 									</header>
