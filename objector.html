@@ -278,9 +278,10 @@ This link to Pynsim a central focus of this paper, Pynsim is a python based simu
 										<p>The cohesion and coupling measure the degree to which different components of a program are connected together. High cohesion and low coupling are usually signs of a good design. </p>
 										<p> The general view that I’ve concluded from these paper is that the best metric depends on the situation, with the most effectively commonly being a combination of multiple metrics.  </p>
 								</ol>
-								<p><b><i> References: Gujar, C.R. (2019) “Use and analysis on cyclomatic complexity in software development,” International Journal of Computer Applications Technology and Research, 8(5), pp. 153–156. </p></b></i>
-						<p><b><i> Tiwari, U. and Kumar, S. (2014) “Cyclomatic complexity metric for component based software,” ACM SIGSOFT Software Engineering Notes, 39(1), pp. 1–6.</p></b></i>
-						<p><b><i> Brij, & Goel, Dr. Brij Mohan & Pradeep, Prof & Bhatia, Pradeep. (2013). An Overview of Various Object Oriented Metrics. International Journal of Information Technology and Systems (IJITS) - ISSN 2277–9825. 2. 18-27 </p></b></i>
+								<p><b><i> References: </p></b></i>
+									<li>Gujar, C.R. (2019) “Use and analysis on cyclomatic complexity in software development,” International Journal of Computer Applications Technology and Research, 8(5), pp. 153–156. /li>
+						<li> Tiwari, U. and Kumar, S. (2014) “Cyclomatic complexity metric for component based software,” ACM SIGSOFT Software Engineering Notes, 39(1), pp. 1–6./li>
+						<li> Brij, & Goel, Dr. Brij Mohan & Pradeep, Prof & Bhatia, Pradeep. (2013). An Overview of Various Object Oriented Metrics. International Journal of Information Technology and Systems (IJITS) - ISSN 2277–9825. 2. 18-27 </li>
 				<br>
 				
 				
@@ -292,24 +293,41 @@ This link to Pynsim a central focus of this paper, Pynsim is a python based simu
 									<header class="major">
 										<h2>Unit 10: Testing Code in Practice </h2>
 									</header>
-									<h3>Reflections Artefacts & Terminologies</h3>
-									<p>Unit 8’s theme was on understanding how data sets are compared in syntax using Union, Intersection, Difference and Symmetric. I think overall the elements in this unit will benefit me with producing an organized code structure and help understand types of data that will be include in syntax. To summarize, data set operations include the following:</p>
-									<ol>
-									<li><b>Union:</b> Items present in all sets</li>
-									<li><b>Intersection:</b> Items the are common between 2 sets</li>
-									<li><b>Difference:</b> Items that are only in 1 set</li>
-									<li><b>Symmetric Difference: </b>items that are not common between 2 sets.</li>
-									</ol>
-									<p>The code below demonstrates set operations between 2 data sets (Shopping basket)</p>
-
-
-									<h3>Forum Discussion:  Metamodel Design to support OOD of the IoT</h3>
-									<p>Object-Oriented Programming (OOP) is a foundational aspect of software development. Therefore, Fortino et al. (2015) introduces a new approach that aims to apply similar fundamentals to the Internet of Things (IoT).  OOP initiatives require planning and design during early development stages. systematic software design strategies such as UML, helps provide a blueprint to support the development. Similarly, Metamodel is an approach that supports analysis and implementation techniques that aids with the development of Smart objects to the IoT (Fortino, et al., 2015).
-										Metamodel approaches can strongly support and identify smart object functions in different abstraction levels. Early development phases must require efforts to understand main system design, relationships, and functional components. As such, metamodel approaches can provide abstract testing grounds for features in different phases of the system. 
-										Although system design planning approaches such as UML or Metamodel are supplemental factors of system development, it remains a challenge to include actual syntax within both approaches. That is because code components, functions, behaviours and algorithms are subject for constant change due to numerous factors during system implementation (Perez & Sellers 2008). A metamodel in concept provides a generalized approach of the system design. The inclusion of further implementation strategies can be time consuming and maybe inefficient. 
-									</p>
-									<P><b><i>All references are recorded in <a href="generic_u12.html">unit 12</a>. </i></b></P>
-				
+									<p>The tenth unit focuses on the various methods and reasons for testing and debugging these link directly to the second assignment of module ‘system implementation’. </p>
+						
+						<h3><u>Artefact: Testing </u></h3>
+									<p> Testing and debugging are essential for software development. The testing phase is the process of identifying defects and errors in the software, while the debugging phase is the process of fixing said errors. The following are the stages are the different types of testing and debugging that can be implemented: </p>
+					
+						<ol>
+							<p> <b>Unit Testing</b>, is a type of testing that tests the individual units or components of the software. It is usually conducted in the coding phase of development. The purpose of unit testing is to identify and fix errors and defects in individual units before the integration into a larger system.	</p>	
+							<p> <b>Integration Testing</b>, involves testing the interaction between differing units or components of the software. This type of testing helps identify defects that arise due to interactions between components.</p>										
+							<p> <b>System Testing</b>, is the process of testing the entire software system as a whole to ensure that it meets the specified requirements. </p>
+							<p> <b>Acceptance Testing</b>, is the process of testing the software to ensure that it meets the user's requirements and expectations. It is usually conducted via the client.</p>
+							<p> <b>Performance Testing</b>, is a type of testing that tests the performance and responsiveness of the software under different conditions.</p>
+							<p> <b>Security Testing<b/>, is a type of testing that tests the security of the software and identifies any vulnerabilities or weaknesses that may be exploited. </p>
+							<p> <b>Debugging</b>, Debugging is the process of identifying and fixing defects and errors in the software. </p>
+						</ol>	
+						<p> In conclusion the testing and debugging phase is critical in ensuring the quality and reliability of the software, and it should be conducted thoroughly to reduce the risk of defects and errors in software. </p>						
+						
+						<br>
+						<h3> Discussion forum: Summary post </h3>
+						<p> After the initial discussion posts from my peers about the topic of object oriented design of IoT system, it seems the general consensus was that metamodels present value to the design process however does have some major drawbacks. </p>
+						<p> Two major strengths statued in the initial post are as follows. The metamodel can provide a standardised way of designing IoT systems which can help to reduce complexity. As well as it provide an abstract view of a system which can help developers understand the system in more detail. Something that I initially missed in my initial post was some other  key benefits of metamodel design which links directly to OOP, that being reusability and flexibility.
+The metamodel can help identify common patterns and reusable components of the system which can help to reduce the development time and resources. While the meta model can support multiple implementations and platforms. This can improve the flexibility and adaptability. </p>
+						<p> The rest of my views regarding the weakness remain relatively the same these being, that metamodels can add an additional level of complexity to the design process, while at the same time the opposite can occur where processes and features are generalised for the purpose of making a metamodel. </p>
+						
+						
+									
+									<P><b><i>Reference: Fortino, G., Guerrieri, A., Russo, W. & Savaglio, C. (2015) Towards a Development Methodology for Smart Object-Oriented IoT Systems: A Metamodel Approach. 2015 IEEE International Conference on Systems, Man, and Cybernetics</i></b></P>
+				<br>
+						<h3> Packaging and testing </h3>
+						<p> The following program shows the use of appropriate comments and documentation to support sample code given. this refers to the activity 1 and 2 of seminar preperation.						
+						<span class="image main"><img src="pictures/OOUnit10.png" alt="" /></span>
+									<p><a href="https://github.com/dheeranc/OOP-coding-/blob/source/python%20add%20comments">source code.</a></p>
+									<br>
+							
+							
+							
 								</div>
 							</section>
 
