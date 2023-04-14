@@ -81,37 +81,26 @@
 										<h2>Unit 1: Introduction to Secure Software Development</h2>
 									</header>
 									
-									<p>The first unit of the module introduces the object oriented programming paradigm, the syntax and the method used to form classes in python. Also introducing the 5 major features of object oriented programming: </p>
-									<li>Classes: OOP is based on the group of classes which are templates or blueprints that define the properties and behaviour of an object. </li>
-								        <li>Encapsulation: is a way to hide the implementation details of an object from the outside. </li>
-								        <li>Inheritance: allows for a new class to be based on an existing one. Inheriting the properties and methods. </li>								
-								        <li>Polymorphism: allows objects to change to take on different forms or types </li>								
-								        <li>Abstraction: is the process of removing unnecessary detail from an object, leaving only the essential characteristics. </li>
-								        <br>
-								        <h3><u>Article review </u></h3>
-								        <p> The article by Di Silvestro & Nadir (2021) discusses the topic of E-portfolios. With the benefits of making e-portfolios for students being explored in detail. The article discusses the effect that e-portfolios have on the enhancement of student experience and engagement to higher learning programs. This article is one of the first studies into finding the true value of the implementation of an e-portfolio of which presented many less commonly associated benefits such as the development of professional confidence. Personally, as a post graduate student making an e-portfolio for the first time I expected the benefits to be simply as a showcase of work and progress, however according to this article the act of building the portfolio itself helps to build many professional skills and serves as form of revision for the content learned during the course. This can help build confidence for students as it shows a clear progression in skills over duration of the module. </p>
-								        
-									<P><b><i> References: Nadir, H. & Di Silvestro, F., 2020. The power of ePortfolio development to foster reflective and deeper learning in an online. 1(1), pp. 154-164.</i></b></P>
-							                <br>
+									<p>The first unit of this module introduces the both concepts of unified modelling language (UML) and the Waterfall and Agile approaches to software development. As well as this the concepts of personal awareness and having a risk-aware culture is developed upon. As important as it is to develop software that is secure, this is only one aspect to responding to the security challenges. It is critical that the people who are internal to the organisation develop a security-responsible attitude.</p>
+									
+									<h3><u>Artefacts: Software development and UML </h3></u>
+									
+									<p>The waterfall and agile approach are two different ways to develop software. The waterfall approach is a sequential process where each step of the development cycle is completed before moving on to the next. The Agile approach is flexible and iterative, focusing on teamwork, collaboration, and customer satisfaction. The choice of approach depends on the project's requirements, complexity, and team dynamics </p>
+									<p>UML is a visual language used to design, document, and explain software systems. It has standardized diagrams that represent different aspects of a system and can be used throughout the software development process to model differing perspectives of the system. UML provides developers with a standardized way to visually communicate a software system's architecture, design and behaviour. This enabling them to better understand and communicate, software systems. </p>
+						
 								        <h3><u>Discussion Forum </u></h3>
-									<p>The research paper by Padhy et al. (2018) breaks down the object-oriented metrics that influence the reusability and its overall assets. Eleven key assets have been identified to affect the reusability of object-oriented software apart from programming code. Six of these assets have been identified to have greater influence on the overall reusability compared to other assets, these have been ranked in detail and shown below. </p>								
-									<ol>
-									<li> Requirement analysis (RA): Its essential to understand the parameters for which a project needs to take place. Without this effective progress cannot be started. </li>
-                      							<li> Knowledge requirements (KR): The knowledge in the form of experiences, ideas and reasoning are key assets that are applicable to any type of project. </li>								
-									<li> Design Patterns (DP): The recycling of older and used designs when applicable can help to speed up the creation of new projects. </li>
-									<li> Algorithm used in the programs (AP): The reuse of algorithms can help to aid developers and makes the designing new programs quicker and easier. </li>
-									<li> Architecture driven approach (ADP): The general structure of a project can be reused in similar projects to help speed up the planning and development stages. </li>								
-									<li> Documentation in project (DIP): The documentation process helps to keep track of all development aspects this can directly be used to contribute to reducing time for future projects by boosting knowledge base of a development team. </li>								
-								        </ol>
-									<p> The remaining 5 unranked assets include: Modules in the program (MIP), Service Contracts (SC), Test Cases/ test design (TCTD), Models in the project (MIP), Used in the data project (UD). These clearly have a role in the reusability of software however when compared to the 6 ranked I personally feel these have a smaller impact. </p>								
-									<P><b><i> References: Padhy, N., Satapathy, S., & Singh, R.P. (2018) 'State-of-the-Art Object-Oriented Metrics and Its Reusability: A Decade Review' </i></b></P>								
+									<p> Broken access control is one of the 10 weaknesses identified by OWASP. Access control is a method for which the right to access data and functions are determined. It outlines the permissions of an authenticated user, this involves the polices or rules which are set in place to limit access, these can be but are not limited to the user device and location. Broken access control occurs when unauthorized access to data and content occurs. This includes viewing, altering and taking control over the administration of a site or program. Broken access control is a product of not effectively implementing when authentication and access restriction, therefore allowing for attackers/hackers to gain access to sensitive files and control over the systems. To prevent broken access control a focus on preventing configuration errors and promoting a higher standard of control access practices in development is necessary. This involves improving the security involved with user ID credentials so that attackers are unable to use other users to gain access. File permission protection is another necessary area of focus as although almost all data is stored in back end servers, with only a few locally stored files it is important that these are not publicly accessible and that most directories are not readable with even fewer being marked as executable. 
+Allowing for the inclusion of different control access systems can help to provide a higher level of security that can reduce broken access control occurring by tailoring the access system specifically to the function. Such as implementing discretionary access control (DAC), role-based access control (RBAC) or mandatory access control (MAC). </p>
+									<span class="image main"><img src="pictures/SSDUnit1.png" alt="" /></span>
 									<br>
-									<h3><u>Artefacts: Protected and unprotected variables </u></h3>
-									<p>In OOP class attributes can be either protected or unprotected variables. An unprotected variable can be accessed or modified from any point in the program while a protected variable can only be accessed and modified within its the class and subclasses. </p>									
-									<p>The following program shows a contact book with the application of protected and unprotected variables. So that some information is public such as the name while the phone number and email are private. </p>									
-									<span class="image main"><img src="pictures/OOUnit1.png" alt="" /></span>									
-									<p><a href="https://github.com/dheeranc/OOP-coding-/blob/source/protected%20and%20unprotected%20variables">source code.</a></p>
-								
+									<p><b><i> References: </p></b></i>
+									<li>Hassan,M et al. (2018). Quantitative Assessment on Broken Access Control Vulnerability in Web Applications.
+
+</li>
+						<li>OWASP (2022) Broken access control, Broken Access Control | OWASP Foundation. Available at: https://owasp.org/www-community/Broken_Access_Control </li>
+						<li>Real Python (2023) Python code quality: Tools & Best Practices, Real Python. Real Python. Available at: https://realpython.com/python-code-quality/ </li>
+						<li> Priebe, T. et al. (2004) “A pattern system for access control,” IFIP International Federation for Information Processing, pp. 235–249. Available at: https://doi.org/10.1007/1-4020-8128-6_16. </li>
+							<br>										
 								
 									<hr />
 									<header class="major">
