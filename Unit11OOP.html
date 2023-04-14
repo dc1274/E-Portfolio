@@ -49,15 +49,31 @@
 										<h1>Unit 11</h1>
 									</header>
 									<span class="image main"><img src="images/u11wp.jpg" alt="" /></span>
-                                    <h3>Reflections & Evaluation (Assignment 1 System Implementation)</h3>
-									<p>Following system design of the driverless car, is system implementation. My main goal was to be able to organize the code in several blocks which will aid in the production of a functional code. The first step was to build the base classes for every system component, which started with a base class for the main control unit that contained all the necessary features. The structure of the syntax was as follows:</p>
-                                    <P><b>Base Classes/ Abstract Classes: A blueprint for the child classes that will be created. </b></P>
-                                    <P><b>Main Classes: Classes to control the cars, record and update information. V2V Communisations, Traffic sign and obstacle inputs  </b></P>
-                                    <P><b>permanent Objects: Deployed objects that contains the information which will be communicated through all car components/classes.</b></P>
-                                    <P><b>User Interface: Defined functions for user navigation through the control unit. (Driving the car, Inserting Objects, View Car information)</b></P>
-                                    <p>Several databases/structures were created to store the driver information, car types, object types and traffic sign types. Among one the important features were the car log which recorded all the driver’s actions. External libraries were added to the system for abstract class decorators and the exit functions to terminate the process upon the driver’s command. </p>
+                                    <h3>Autonomous Vehicle System: Assignment 2 System Implementation </h3>
+									<p><b>Reflection  </p></b>
+	<p>The second assignment due for submission during the eleventh unit of the module, involved the implementation of the design proposal from unit 7.</p>
+								<p><u> Description:</u></p>
+						<p>The program I designed is to help with the data functions of a self-driving car it includes the following classes: User interface which takes the driver destination choice, Localization class, monitors where the current location is, the Destination class which finds the destination, the navigation class which finds and creates the route and passes the info to data store class which passes onward to the central control unit for decision making to be sent to the vehicle interface or Physical car class which has functionally in the form of steering, acceleration and deceleration. The program also need to uses the sensor class which passes raw data to the perception class for analysis and detection. This is sent to the central control unit for decision making. Which generates corrective responses used by the car </p>
+								<p><u> Development process: </u></p>
+								<p> Firstly, understanding what the scope of what the program was and determining what it is I wanted the program to do was a tough first step, this is due to the task being so broad and the functioning system of a self-driving car being so large. I decided to keep the system relatively simple and use the classes that I chose in my UML design as they were broad representations of the key model related to the system.  </p>
+								<p> I started the development process by coding all the classes and define them this took the longest time as I had to change many aspects from each one of the classes to be better able to function with the transferring of data between them.
+I organized them based on the user input and the transfer of information towards the vehicle interface or car. I utilized queues and stacks for the navigation and perception data respectively as this would give the central control unit the best ability to make decisions based on the most relevant information that corresponds to each other. </p>
+								<p>The data store and control unit classes were important for the requirements of this assignment as it utilizes both the searching and storing algorithms by using the data generated from other classes.  </p>
+								<p> Using the help of the built-in python debugger, I was successfully able to remove all the syntax errors from the program and create two testing files that firstly tested the destination module with assert statements and the secondary testing file tested all the components used in the program together </p>
+								<p> When running the program, it should generate continuous corrective responses that will be printed for the user. These responses should be utilized via the car system on the way to the set destination. </p>
+								<p> I initially wanted the system to also show the angles of steering that should be changed and the changes that should be made to the speed according to the object detected however I was unable to implement this with the given time constrains.  
+Ultimately, the program represent the outline of a self-driving car system that shows in a basic sense how a full autonomous car system would function. </p>
+					
+								
+		
                                     <p><b>Project code and files<a href="https://github.com/dheeranc/OOP-coding-/tree/source/OOP%20project">here</a>.</b></p>
-                                 
+                                 <p><b><i> References: </p></b></i>
+									<li>Reitz, K. and Schlusser, T. (2016) The hitchhiker''S guide to python: Best practices for development. Sebastopol, CA: O''Reilly Media, Inc. </li>
+						<li>Reddy, P.P. (2019) Driverless car : Software modelling and design using Python and tensorflow, EasyChair Home Page. EasyChair. </li>
+						<li>Real Python (2023) Python code quality: Tools & Best Practices, Real Python. Real Python. Available at: https://realpython.com/python-code-quality/ </li>
+						<li>Sorting, searching and algorithm analysis (2022) Sorting, searching and algorithm analysis - Object-Oriented Programming in Python 1 documentation. Available at: https://python-textbok.readthedocs.io/en/1.0/Sorting_and_Searching_Algorithms.html </li>
+							<br>	
+								
 								</div>
 							</section>
 
