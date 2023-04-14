@@ -156,12 +156,14 @@ I believe that in my initial post I discounted the other unranked 5 factors, as 
 										<h2>Unit 4:  Applying a UML Model to a Program Implementation: UML in Practice </h2>
 									</header>
 									<p>The fourth unit discusses the implementation of UML designs to a program and the further creation of other types of UML designs not yet explored such as an activity diagram. This unit also introduced the different types of views for which the types of UML diagram represents. </p>
+									
 									<p> These are the: use case view point which addresses the functionally based on the user perspective. </p>
 									<p> The structural view which describes the overall structure present in the system. </p>
 									<p> The behavioural view which describes the dynamic behaviour present in the system between object and components. </p>
 									<p> Implementation view which shows how a system is implemented with the use of source codes and the overall framework used in development. </p>								
 									<p> Deployment view describes the actual deployment of the system these include the hardware and infrastructure needed to run said system. </p>
 									<p> Process view point which describes the combination and cooperation of multiple aspects of the system to handles processes and tasks. Examples of these are sequence and activity diagrams. </p>								
+								
 									<br>
 								
 								
@@ -196,12 +198,14 @@ I believe that in my initial post I discounted the other unranked 5 factors, as 
 								<h3><u> Artefacts: Abstraction in Object Oriented Programming </u></h3>
 								<p><u> Metrics used to assess the features of an object oriented program </u> </p>
 								<p>There are several metrics used to assess the features of an object oriented program. These metrics provide a way to measure the quality of a programs design and implementation, therefore helping to identify potential issues and aspects to be improved. The most commonly used metrics used are as follows: </p>
+								<ol>
 								<p>Coupling, this measures the degrees of interdependence that is present between set classes of a program. A high coupling indicates that changes to one class will heavily affect others, making the program harder to change and modify. </p>
 								<p> Cohesion, this measures the degree to which member of a class are related to each other. High cohesion indicated that the member of the class are closely related and work together to achieve a common goal. </p>						
 								<p> Inheritance depth, this measures the number of levels inside a class hierarchy. The higher this depth the more complex and difficult it is to understand. </p>
 								<p> Method complexity, this measures the difficulty of individual methods in a class. A high method complexity can indicate that a method is doing too much and may be too complex. </p>
 								<p> Code coverage, this measures the amount of code that is executed during testing. High code coverage indicated that most of the code has been tested and is less likely to contains errors.  </p>
 								<p> Cyclomatic complexity, this is most used metric. It measure the number of independent paths in a program. The higher the complexity the more the difficult and harder to modify or understand. </p>				
+								<ol>
 								<P><b><i> References: Brij, & Goel, Dr. Brij Mohan & Pradeep, Prof & Bhatia, Pradeep. (2013). An Overview of Various Object Oriented Metrics. International Journal of Information Technology and Systems (IJITS) </P></b></i>		
 								<br>
 								<p>Below show a python program which has three abstract methods and one subclass. This is used to allow a user to perform a three basic banking operations these are deposit, withdraw and checking the balance. While the “checking account” serves as the subclass and actually allows for the implementation of the operations for a user due to the use of “abstract method” decorator for the purpose of showing the use of the subclass. </p>
@@ -222,24 +226,22 @@ This link to Pynsim a central focus of this paper, Pynsim is a python based simu
 									<header class="major">
 										<h2>Unit 7: Debugging / Error Handling, Data Structures and Data Search </h2>
 									</header>
-									<h3>Reflections Artefacts & Terminologies</h3>
-									<p>Unit 8’s theme was on understanding how data sets are compared in syntax using Union, Intersection, Difference and Symmetric. I think overall the elements in this unit will benefit me with producing an organized code structure and help understand types of data that will be include in syntax. To summarize, data set operations include the following:</p>
-									<ol>
-									<li><b>Union:</b> Items present in all sets</li>
-									<li><b>Intersection:</b> Items the are common between 2 sets</li>
-									<li><b>Difference:</b> Items that are only in 1 set</li>
-									<li><b>Symmetric Difference: </b>items that are not common between 2 sets.</li>
-									</ol>
-									<p>The code below demonstrates set operations between 2 data sets (Shopping basket)</p>
-
-									<p><a href="https://github.com/TarekHamzaGoda/03_Module_3_OOP_Sep22/blob/main/01_Activities/Unit8_Datasets.py">source code</a>.</p></p>
-
-									<h3>Forum Discussion:  Metamodel Design to support OOD of the IoT</h3>
-									<p>Object-Oriented Programming (OOP) is a foundational aspect of software development. Therefore, Fortino et al. (2015) introduces a new approach that aims to apply similar fundamentals to the Internet of Things (IoT).  OOP initiatives require planning and design during early development stages. systematic software design strategies such as UML, helps provide a blueprint to support the development. Similarly, Metamodel is an approach that supports analysis and implementation techniques that aids with the development of Smart objects to the IoT (Fortino, et al., 2015).
-										Metamodel approaches can strongly support and identify smart object functions in different abstraction levels. Early development phases must require efforts to understand main system design, relationships, and functional components. As such, metamodel approaches can provide abstract testing grounds for features in different phases of the system. 
-										Although system design planning approaches such as UML or Metamodel are supplemental factors of system development, it remains a challenge to include actual syntax within both approaches. That is because code components, functions, behaviours and algorithms are subject for constant change due to numerous factors during system implementation (Perez & Sellers 2008). A metamodel in concept provides a generalized approach of the system design. The inclusion of further implementation strategies can be time consuming and maybe inefficient. 
-									</p>
-									<P><b><i>All references are recorded in <a href="generic_u12.html">unit 12</a>. </i></b></P>
+									<p>The seventh unit discusses the concepts of debugging and error handling as well as the concepts of data structure and searching. The seventh unit also marked the submission of the first assignment of the module which involved a accumulation of all the UML concepts previously discussed. </p>
+									<br>
+									<h3>Artefacts: Data structures </h3>
+									<p>Data structures are essential for object-oriented development because they enable developers to efficiently and systematically organize, store, and work with data. Lists are one of the most commonly used data structures in object-oriented programming. They facilitate easier data management and manipulation by allowing developers to store collections of objects or values. Another frequently used data structure in object-oriented programming is dictionaries. They enable programmers to store data as key-value pairs, allowing for data retrieval and updating. Sets are another structure in object-oriented programming that represent a collection of unordered unique elements. They allow developers to use set operations such as union, intersection and difference.  </p>									
+									<p> These data structures can be used to represent a variety of real-world objects or concepts in object-oriented programming these help to support object-oriented development by allowing developers to organize, store, and manipulate data in an efficient and structured manner. </p>
+									<p> The below program shows the creation of a nested dictionary of data on cars within a Car class. The program is extended to work with the dictionary by calling the following methods: items(), keys(), values(): </p>										
+									<span class="image main"><img src="pictures/OOUnit7.png" alt="" /></span>
+									<p><a href="https://github.com/dheeranc/OOP-coding-/blob/source/dictionary%20car">source code.</a></p>
+									<br>
+									<h3><u> Reflection: Design Proposal  </u></h3>
+									<p> The first assignment of this modules was to make a design proposal for a piece of software that could help with the processes of a self-driving or automated car. This involved the creation of five different UML designs these included the: class, use case, sequence, activity and state diagrams. I found some of these more difficult to apply than other. The use case diagram and especially the sequence diagram were particularly difficult for me due to having less experience making these but I felt as though the finished product of these did reflect what I wanted to the best of my ability. My program that I detailed in the design documentation described a data transferring program that could take data acquired from the sensors package and send it to the correct aspects of the car system such as the navigation of perception modules to analyse. Tis would then be send to the central control unit that would make decisions on the cars current objects changing to be in line with any detections or environmental dangers. This would then be sent to the cars interface to change the steering, acceleration and deceleration. This is the basis of my program, at the begin of this task I found it difficult to start as I was concerned with trying to program the entirety of a self-driving car system. I soon realised that this was too far out of my abilities and had to limit the program to just dealing with the navigation, environmental and movement of the car by transferring data and storing data to the correct components in different data types such as lists, stacks, queues and dictionaries. </p>										
+								
+									
+									
+									
+									
 									<hr />
 									<header class="major">
 										<h2>Unit 8: Data Structures and Data Search in Practice </h2>
