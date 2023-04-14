@@ -184,21 +184,66 @@ Python has a range of built-in input validation mechanisms, while in C, input va
 									<header class="major">
 										<h2> Unit 4: Exploring Programming Language Concepts </h2>
 									</header>
-									<p>The fourth unit discusses the implementation of UML designs to a program and the further creation of other types of UML designs not yet explored such as an activity diagram. This unit also introduced the different types of views for which the types of UML diagram represents. </p>
-									<ol>
-									<p> These are the: use case view point which addresses the functionally based on the user perspective. </p>
-									<p> The structural view which describes the overall structure present in the system. </p>
-									<p> The behavioural view which describes the dynamic behaviour present in the system between object and components. </p>
-									<p> Implementation view which shows how a system is implemented with the use of source codes and the overall framework used in development. </p>								
-									<p> Deployment view describes the actual deployment of the system these include the hardware and infrastructure needed to run said system. </p>
-									<p> Process view point which describes the combination and cooperation of multiple aspects of the system to handles processes and tasks. Examples of these are sequence and activity diagrams. </p>								
-								</ol>
-									<br>
-								
-								
-								<h3><u>Artefact: UML design </u></h3>
-									<p> Activity diagrams display the sequence of activities, decision points and the differing branching paths present in the system. The following activity diagram displays a self-driving car system involving navigation, environmental and internal systems of the car. </p>									
-									<span class="image main"><img src="pictures/OOUnit4.png" alt="" /></span>
+									<p>The fourth unit discusses the effect of the key programming concepts on system security. The focus is on two concepts in particular, the regular expressions (regex) and recursion. </p>
+				<h3><u> Artefact: Regex and recursion </u></h3>	
+				<p><u> What is ReDOS and what part do ‘Evil Regex’ play? </u></p>
+				<p> ReDoS stands for Regular expression Denial of Service, which is a type of vulnerability that can be exploited in applications that use regular expressions. It occurs when an attacker creates a specially crafted input that takes a long time to process and causes the application to become unresponsive or crash. The root cause of ReDoS is typically an inefficient regular expression pattern that is susceptible to exponential-time matching behaviour. </p>
+				<p> Evil Regex" refers to regular expression patterns that are deliberately designed to exploit ReDoS vulnerabilities. These patterns often involve the use of repetition operators such as * and +, which can cause backtracking and exponential matching. By crafting an input that triggers this behaviour, an attacker can consume huge amounts of CPU time and cause a denial of service </p>
+				<br>
+				<p><u> What are the common problems associated with the use of regex? How can these be mitigated? </u></p>	
+				<p> The use of regular expressions (regex) can lead to several common problems, including: ReDoS Vulnerabilities: As mentioned earlier, <b>inefficient regex patterns</b> can lead to ReDoS vulnerabilities that can be exploited by attackers to cause denial of service attacks. <b>False positives/negatives</b>, regular expressions are powerful tools but can be prone to producing false positives or negatives, where it either matches incorrect inputs or fails to match correct ones. <b>Limited readability</b>, complex regex patterns can be difficult to read and understand, making it challenging for other developers to maintain or modify the code. <b>Compatibility issues</b>, regular expressions can vary in syntax and behaviour across different programming languages, which can cause compatibility issues when code is transferred or reused. </p>
+				<p> To mitigate these issues, developers can follow these best practices when working with regular expressions these are to limit the use of complex patterns. By using simpler patterns whenever possible, this minimizes the risk of ReDoS vulnerabilities and improve readability. By testing regular expressions with a variety of inputs, including inputs that are expected to match and those that are not. This helps to identify false positives and negatives and improve the accuracy of the regex pattern. By using tools such as regex validators to check the syntax and efficiency of the regex patterns this helps to mitigate some issues. Finally by ensuring compatibility of regular expressions across different programming languages ensures that the code can be ported or reused without issues. </p>
+				<br>
+				<p><u> How and why could regex be used as part of a security solution? </u></p>
+				<p> Regular expressions (regex) can be used as part of a security solution to help detect and prevent security threats in a variety of ways. Regular expressions can be used to validate user input and ensure that it meets specific requirements, such as length, format, or content. This can prevent input-based attacks, such as SQL injection, cross-site scripting (XSS), and command injection. Regular expressions can be utilized to search through log files and detect patterns of suspicious activity. Regular expressions can also be used to search through files or network traffic and detect patterns of malicious code or malware, such as virus signatures. Regular expressions can be used to mask sensitive data, such as credit card numbers, social security numbers. </p>
+				<p> In conclusion, regular expressions are a powerful tool that can be used as part of a security solution to detect and prevent security threats in various ways. By using regex to validate input, analyse logs, detect malware, filter URLs and mask sensitive data while organizations can enhance their security posture and reduce the risk of security breaches. </p>
+				
+				<p><b><i> References: </p></b></i>
+									<li> Larson, E. (2018) “automatic checking of regular expressions,” 2018 IEEE 18th International Working Conference on Source Code Analysis and Manipulation. Available at: https://doi.org/10.1109/scam.2018.00034 </li>
+						<li>Erwig, M. and Gopinath, R. (2012) “Explanations for regular expressions,” Fundamental Approaches to Software Engineering, pp. 394–408. Available at: https://doi.org/10.1007/978-3-642-28872-2_27. </li>
+				
+				
+				
+				
+				
+				
+				
+				<h3> Recursion </h3>
+									<p>One of the classic programming problems that is often solved by recursion is the towers of Hanoi problem. <u>Read the explanation, study the code and then create your own version</u>.</p>
+		<p> The Towers of Hanoi is a puzzle where you need to move a stack of disks from one peg to another, following the following rules: 	</p>	
+		<ol>
+			<li> Only one disk can be moved at a time </li>
+			<li> No disk may ever rest atop a smaller disk.	</li>
+		</ol>
+			<p> This problem can be solved using recursion, which means breaking down the problem into smaller sub-problems. To move n amount of disks, we can move the top n-1 disks to the temporary peg, move the largest disk to the destination peg, and then move the n-1 disks to the destination peg using the original peg as now a temporary peg. We keep repeating this process recursively until we solve the problem for the base case of moving just one disk. </p>
+			<p> Below shows the python program I made that uses the concept of recursion. It can ask for the number of disks and then executes the move, finally displaying the number of moves executed to reach the solution.</p>
+		
+		<span class="image main"><img src="pictures/SSDUnit4.png" alt="" /></span>
+		<p><a href="https://github.com/dheeranc/SECURESP/blob/source/Recursion">source code.</a></p>
+	
+		<p> The function towers_of_hanoi takes four total arguments, the number of disks (n), the peg from which to move the disks (from_peg), the peg to which to move the disks (to_peg), and the temporary peg to use (temp_peg). If n is 1, we simply move the disk from the from_peg to the to_peg and return 1 move. Finally, the user is asked for the number of disks, call the towers_of_hanoi function with the starting and ending pegs, and display the number of moves executed. </p>
+		<p><a href="https://github.com/dheeranc/SECURESP/blob/source/recursion_results"> The results for a test of 5 disks shown here.</a></p>
+		
+<br>
+		<h3> Regex</h3>
+		<p> The UK postcode system consists of a string that contains a number of characters and numbers. Below shows a python program that implements a regex that complies with the real rules for UK post codes and tests them against the given post codes. </p>
+		<span class="image main"><img src="pictures/SSDUnit4.5.png" alt="" /></span>
+		<p><a href="https://github.com/dheeranc/SECURESP/blob/source/regex">source code.</a></p>
+		<br>
+		<p> the following code shows the validity of the given test post code for testing </p>
+		<span class="image main"><img src="pictures/SSDUnit4.6.png" alt="" /></span>
+		<p><a href="https://github.com/dheeranc/SECURESP/blob/source/regex_results">source code.</a></p>
+		<br>
+		<p><u> How do you ensure your solution is not subject to an evil regex attack? </u></p>
+		<p> To ensure that the solution is not subject to an evil regex attack the following solutions can be implemented. Firstly the use of a regex engine that supports anti-DoS features, as some engines have built-in anti-DoS features that can detect and prevent ReDoS attacks. For example the re2 library for Python has a feature called "safe search mode" that can be used to prevent ReDoS attacks. Secondly by using a more restrictive regex pattern this could help to reduce the probability of an evil regex attack. However, it is vital to ensure that the regex pattern used is as restrictive as possible while still allowing all valid inputs. </p>
+		
+		<p><b><i> References: </p></b></i>
+									<li> Larson, E. (2018) “automatic checking of regular expressions,” 2018 IEEE 18th International Working Conference on Source Code Analysis and Manipulation. Available at: https://doi.org/10.1109/scam.2018.00034 </li>
+						<li>Erwig, M. and Gopinath, R. (2012) “Explanations for regular expressions,” Fundamental Approaches to Software Engineering, pp. 394–408. Available at: https://doi.org/10.1007/978-3-642-28872-2_27. </li>
+			
+		
+		
+		
 									<br>
 								
 								
