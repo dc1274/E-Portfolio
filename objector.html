@@ -192,15 +192,33 @@ I believe that in my initial post I discounted the other unranked 5 factors, as 
 									<header class="major">
 										<h2>Unit 6: Abstract Methods and Interfaces </h2>
 									</header>
-									<h3>Reflections & Evaluation(Driverless Car System Design) </h3>
-									<p>A as software engineer, am given the requirements to build a driverless car system. However, this part of the assignment requires me to only develop UML designs that showcases main software features and use cases during the pre-system implementation Phase. This assignment is considered as a great opportunity to apply the knowledge gained during previous units on UML design. First, A research was conducted on the main features of autonomous cars. which includes components such as environmental mapping, sensors and traffic recognition. As such, these components will be connected to the control unit that will interact with the driver. Several UML models were built based on the system requirement and level. 
-									The complete system design is <a href="https://github.com/TarekHamzaGoda/03_Module_3_OOP_Sep22/blob/main/02_Driverless_Car/Autonumus_SystemDesign.pdf">recorded here</a>.</p>
-									<h3><u>Artefacts</u></h3>
-									<h3>Nested Dictionaries</h3>
-									<p> OOP development are supported by data structures such as dictionaries. This exercise aims to create nested dictionary within the Class Car. Data types will be retrieved using class methods items (), keys (), and values (). The Car Class will contain a dictionary as a class attribute in which car types, makes and year will be stored. class methods will then return the data types. An object is instantiated to add the data set.
-										<a href="https://github.com/TarekHamzaGoda/03_Module_3_OOP_Sep22/blob/main/01_Activities/Unit7_DataStructure.py">source code</a>.</p>
-				
-									<hr />
+									<p>The sixth unit discusses the concepts of abstract methods and interfaces. The concept of encapsulation is also introduced which involves the grouping of attributes and different data structures. An abstract method is declared in a class but does not have any implementation. This is for the purpose of providing a blueprint for its subclasses to implement the functionality of it. An interface is similar to this however an interface can only contain abstract methods and constants. </p>									
+								<h3><u> Artefacts: Abstraction in Object Oriented Programming </u></h3>
+								<p><u> Metrics used to assess the features of an object oriented program </u> </p>
+								<p>There are several metrics used to assess the features of an object oriented program. These metrics provide a way to measure the quality of a programs design and implementation, therefore helping to identify potential issues and aspects to be improved. The most commonly used metrics used are as follows: </p>
+								<p>Coupling, this measures the degrees of interdependence that is present between set classes of a program. A high coupling indicates that changes to one class will heavily affect others, making the program harder to change and modify. </p>
+								<p> Cohesion, this measures the degree to which member of a class are related to each other. High cohesion indicated that the member of the class are closely related and work together to achieve a common goal. </p>						
+								<p> Inheritance depth, this measures the number of levels inside a class hierarchy. The higher this depth the more complex and difficult it is to understand. </p>
+								<p> Method complexity, this measures the difficulty of individual methods in a class. A high method complexity can indicate that a method is doing too much and may be too complex. </p>
+								<p> Code coverage, this measures the amount of code that is executed during testing. High code coverage indicated that most of the code has been tested and is less likely to contains errors.  </p>
+								<p> Cyclomatic complexity, this is most used metric. It measure the number of independent paths in a program. The higher the complexity the more the difficult and harder to modify or understand. </p>				
+								<P><b><i> References: Brij, & Goel, Dr. Brij Mohan & Pradeep, Prof & Bhatia, Pradeep. (2013). An Overview of Various Object Oriented Metrics. International Journal of Information Technology and Systems (IJITS) </P></b></i>		
+								<br>
+								<p>Below show a python program which has three abstract methods and one subclass. This is used to allow a user to perform a three basic banking operations these are deposit, withdraw and checking the balance. While the “checking account” serves as the subclass and actually allows for the implementation of the operations for a user due to the use of “abstract method” decorator for the purpose of showing the use of the subclass. </p>
+								<span class="image main"><img src="pictures/OOUnit6.png" alt="" /></span>
+								<p><a href="https://github.com/dheeranc/OOP-coding-/blob/source/Banking%20program">source code.</a></p>
+									<br>
+								<h3>Article Review </h3>
+								<p>The article by Knox et al. (2018) discusses many the concept of a modelling management resource system in the form of Pynsim. Component based modelling as described in this article is an approach to modelling a complex system by breaking it down into smaller  components which can then be modelled and analysed separately. These components can then be combined back together to a larger system with the behaviour of the system determined via the interactions between these components. Component based modelling frameworks depend on several elements such as the component architecture, component libraries, model composition as well as verification and finally the documentation stage. 
+This link to Pynsim a central focus of this paper, Pynsim is a python based simulation framework that allows for the modelling and analysis of complex dynamic systems. It is built to be flexible as well as modular. It can even provide pre built components for common systems. Pynsim includes a simulation engine that execute a model and produce outputted data. In conclusion, Pynsim is a powerful for modelling a simulating complex systems in a user friendly way and due to its python based architecture, allows for easy integration with different python libraries and tools. </p>
+								<P><b><i> References: Knox, S. et al. (2018) “A python framework for multi-agent simulation of Networked Resource Systems,” Environmental Modelling & Software, 103, pp. 16–28. </P></b></i>	
+								<br>
+								
+								
+								
+						
+								
+								<hr />
 									<header class="major">
 										<h2>Unit 7: Debugging / Error Handling, Data Structures and Data Search </h2>
 									</header>
