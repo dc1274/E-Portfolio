@@ -271,29 +271,39 @@ Python has a range of built-in input validation mechanisms, while in C, input va
 									<header class="major">
 										<h2>Unit 6: Using Linters to Support Python Testing </h2>
 									</header>
-									<p>The sixth unit discusses the concepts of abstract methods and interfaces. The concept of encapsulation is also introduced which involves the grouping of attributes and different data structures. An abstract method is declared in a class but does not have any implementation. This is for the purpose of providing a blueprint for its subclasses to implement the functionality of it. An interface is similar to this however an interface can only contain abstract methods and constants. </p>									
-								<h3><u> Artefacts: Abstraction in Object Oriented Programming </u></h3>
-								<p><u> Metrics used to assess the features of an object oriented program </u> </p>
-								<p>There are several metrics used to assess the features of an object oriented program. These metrics provide a way to measure the quality of a programs design and implementation, therefore helping to identify potential issues and aspects to be improved. The most commonly used metrics used are as follows: </p>
-								<ol>
-								<p>Coupling, this measures the degrees of interdependence that is present between set classes of a program. A high coupling indicates that changes to one class will heavily affect others, making the program harder to change and modify. </p>
-								<p> Cohesion, this measures the degree to which member of a class are related to each other. High cohesion indicated that the member of the class are closely related and work together to achieve a common goal. </p>						
-								<p> Inheritance depth, this measures the number of levels inside a class hierarchy. The higher this depth the more complex and difficult it is to understand. </p>
-								<p> Method complexity, this measures the difficulty of individual methods in a class. A high method complexity can indicate that a method is doing too much and may be too complex. </p>
-								<p> Code coverage, this measures the amount of code that is executed during testing. High code coverage indicated that most of the code has been tested and is less likely to contains errors.  </p>
-								<p> Cyclomatic complexity, this is most used metric. It measure the number of independent paths in a program. The higher the complexity the more the difficult and harder to modify or understand. </p>				
-								</ol>
-								<P><b><i> References: Brij, & Goel, Dr. Brij Mohan & Pradeep, Prof & Bhatia, Pradeep. (2013). An Overview of Various Object Oriented Metrics. International Journal of Information Technology and Systems (IJITS) </P></b></i>		
-								<br>
-								<p>Below show a python program which has three abstract methods and one subclass. This is used to allow a user to perform a three basic banking operations these are deposit, withdraw and checking the balance. While the “checking account” serves as the subclass and actually allows for the implementation of the operations for a user due to the use of “abstract method” decorator for the purpose of showing the use of the subclass. </p>
-								<span class="image main"><img src="pictures/OOUnit6.png" alt="" /></span>
-								<p><a href="https://github.com/dheeranc/OOP-coding-/blob/source/Banking%20program">source code.</a></p>
+									<p> The sixth unit focuses on the application of different resources and technologies that are available within python to help support the development of high quality and secure code.  </p>									
+								<h3><u> Artefacts: Linters </u></h3>
+								
+								<p> A linter is a tool that analyses code to detect and report errors. It typically performs static analysis of code by scanning through the code and looking for common patterns and other known issues. Linter tools often provide suggestions or warnings to help programmers ensure their code is consistent, maintainable, and conforms to best practice standards. Using a linter can be beneficial for software developers as it helps them identify and correct issues early in the development process this  reducing the likelihood of bugs creating overall more secure code. </p>
+								<p>There are many different linters available and they can vary in their output and the types of issues that they detect. The general output from a linter can be classified into three main categories: warnings, errors and suggestions. </p>
+								<p> Errors are typically the most severe issues detected by a linter, and can indicate that the code contains a problem that must be fixed before it can be executed. Errors may include thing like syntax errors or undefined variables. Warnings are less severe than errors, and they indicate potential issues that could lead to errors or other problems if not addressed. Warnings may include things like unused variables or code that could be simplified. Suggestions are the least severe issues detected by a linter, and they provide advice on how to improve the code or make it more maintainable. Suggestions may include things like consistent formatting, using clearer variable names, or commenting code to improve its readability. </p.
+								<p> There is a high relevance and applicability of linter in secure software development this is due to it being able to help identify potential security vulnerabilities and issues in the code. By detecting and highlighting common coding errors and insecure practices, linters can help prevent security issues from arising in the first place. As well as this linters can detect insecure coding practices and enforce a higher coding standard that promote secure coding practices </p>
+								<p> Ultimately, the output from a linter should be evaluated based on its impact on the overall quality and maintainability of the code as well as its relevance to the specific development and testing scenarios. </p>
+<p><b><i> References: </p></b></i>
+									<li>Gregg, P. and Mitchell, M. (2022) Stylising your python code: An introduction to linting and formatting, Jumping Rivers. Available at: https://www.jumpingrivers.com/blog/python-linting-guide/ </li>
+						<li>Milaszewski, L. (2022) Improve your python code with Python linters: Ds stream, Data Analytics. Available at: https://dsstream.com/improve-your-python-code-quality/ </li>
+			
+<br>
+
+<h3><u> Reflection: Design Document </u></h3>
+<p> The design document is the first assignment for the secure software development module. It is the first group assignment that I have worked on in computer science so far. The group I was assigned to is known as Team Transparency and our task is to develop a design document for the development of  an application that provides a secure repository for an organisation. This will further be implemented into a fully realised program by our group. The teamwork within my group was smooth with us firstly setting out communication methods which we decided to use a Microsoft team’s, this was due to our large time differences. Our first task as a group was to decide on a domain for which the program would be built for.  </p>
+<p> Team transparency ultimately decided on The International Space Station (ISS), this was entire due to it being the most interesting domain that would also fit the criteria to build a useful piece of secure software.  Our primary object was to  facilitate and securely store the constant stream of mission data coming from the ISS, we needed to develop and deploy a software system that will provide a secure repository for data transmitted from the International Space Station, the team chose to make a data archive or IDA as we would refer to it as.  </p>
+<p> The design of our system was broken down into these systems: The IDA prototype is comprised of Bottle running the backend & web server and HTML & CSS presenting a simple GUI. While the data is to be stored in SQLite database and communicated with via the Bottle backend. The DataService microservice processes the data stream, decrypts incoming ISS data with the cryptography Python library using Fernet symmetric cryptography and stores the data in the local SQLite database.  The frontend comprises of three interfaces: a login portal, a table viewer, and an admin dashboard showing users and event logs. Therefore, the users must authenticate through the login to access the directory. All authorised and authenticated users can create and read data via this interface. While superusers(admin) can also update and delete data via this interface, manage users via the admin dashboard and view event logs. </p>
+<p> With a clear idea of what the different aspects of system we started to develop the UML diagrams we chose to make firstly the Use case diagram which showed the user roles and impact on the system. Secondly we made two separate activity diagrams one for each type of user. That being the regular user and the admin who has extra security privileges into the system. Lastly we made the class diagram this was still incomplete at submission due to our team needing to start development before finalising this. </p>
+<p> Overall team transparency worked well together to create a comprehensive design document, as this was our first time working as a team there was some getting used to each other’s style of work but we managed to submit something we were all happy with.    </p>
+<br>
+
+
+
+
+
+
+
+
+
+								<p><a href="https://github.com/dheeranc/SECURESP/blob/source/TeamTransparency-SSDCS-Assignment-1%20(2).docx">Design document.</a></p>
 									<br>
-								<h3>Article Review </h3>
-								<p>The article by Knox et al. (2018) discusses many the concept of a modelling management resource system in the form of Pynsim. Component based modelling as described in this article is an approach to modelling a complex system by breaking it down into smaller  components which can then be modelled and analysed separately. These components can then be combined back together to a larger system with the behaviour of the system determined via the interactions between these components. Component based modelling frameworks depend on several elements such as the component architecture, component libraries, model composition as well as verification and finally the documentation stage. 
-This link to Pynsim a central focus of this paper, Pynsim is a python based simulation framework that allows for the modelling and analysis of complex dynamic systems. It is built to be flexible as well as modular. It can even provide pre built components for common systems. Pynsim includes a simulation engine that execute a model and produce outputted data. In conclusion, Pynsim is a powerful for modelling a simulating complex systems in a user friendly way and due to its python based architecture, allows for easy integration with different python libraries and tools. </p>
-								<P><b><i> References: Knox, S. et al. (2018) “A python framework for multi-agent simulation of Networked Resource Systems,” Environmental Modelling & Software, 103, pp. 16–28. </P></b></i>	
-								<br>
+								
 								
 								
 								
