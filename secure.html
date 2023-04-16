@@ -370,25 +370,44 @@ The ontologies discussed include those of the SOA (service oriented architecture
 									<header class="major">
 										<h2>Unit 8: Cryptography and Its Use in Operating Systems </h2>
 									</header>
-								<p> The eight unit of the module focuses on data structures and data searching. It focuses on understanding how data sets are compared using set operation. This is useful as it can help to organize coding structure and understand different types of data.  </p>
-								<h3><u>Artefact: Data Structures </u></h3>
-									<p>Set operations such as Union, Intersection, Difference and Symmetric difference can be used to manipulate sets of data that represent various characteristics of the car's environment, such as its sensors, external surrounding, and driving rules. </p>
-								<p>The <b>union</b> of two sets A and B is a new set that contains all the elements that are in A or B or both. For a self-driving car, the union operation could be used to combine the data from multiple sensors such as lidar, radar, and cameras, into a single set representing the car's environmental perception. </p>
-								<p> The <b>intersection</b> of two sets A and B is a new set that contains all the elements that are in both A and B. For a self-driving car, the intersection operation could be used to filter conflicting data from different sensors retaining only the consistent data that represents the car's true environment. </p>
-								<p> The <b>difference</b> of two sets A and B is a new set containing all the elements that are in A but not in B. For a self-driving car, the difference operation can be used to identify and remove unwanted anomalies from the environment set. </p>
-								<p> The <b>symmetric difference</b> of two sets A and B is a new set containing all the elements that are in either A or B but not inside both. For a self-driving car, this can be used to compare and contrast the data from two sets, these set can be anything where the car need to detects changes or differences between modules such as perception. </p>
-								<br>
-								<p><u>The following Python program shows a simple name directory that carries out a linear search on a list data structure. </u></p>
-								<span class="image main"><img src="pictures/OOUnit8.png" alt="" /></span>
-									<p><a href="https://github.com/dheeranc/OOP-coding-/blob/source/list%20search">source code.</a></p>
+								<p> The eighth unit of the module discusses the concept of cryptography. Cryptography is the practice of securing communication in the presence of third parties. It involves transforming plain text or data into an unreadable format, known as cipher text and using various algorithms and keys. The process of transforming the original message into the cipher text is known as encryption, while the process of transforming the cipher text back into the original message is known as decryption. </p>
+<br>
+<h3><u> Artefact: Cryptography   </h3></u>
+<p><u> Select one of the methods discussed in the article by tutorialpoint and create a python program that can take a text file encrypt it and output an encrypted version as a file in your folder. </u></p>
+<p> I chose to use the Caesar cypher as my method for my cryptography program (shown below) due to it being the easiest and most commonly used method of implementation. It is based on the method of substitution. This means that every letter used in the message is replaced by a new letter. The replacement letter results from a letter offset within the alphabet that is determined in advance. </p>
+<p> I believe the program would make files that meet GDPR regulations depending on the type of data being used to be decrypted. However, in most cases where the goal is to safe guard information as safely as possible the use of a Caesar cypher would not be the ideal choice due to the limited number of variable in this case being 25 due to the options of the alphabet and it commonly being considered to be the weakest form of cryptography. </p>
+<br>
+								<span class="image main"><img src="pictures/SSDUnit8.png" alt="" /></span>
+									<p><a href="https://github.com/dheeranc/SECURESP/tree/source/Cryptography">The program code and test results are found here.</a></p>
 									<br>
-								<h3> Discussion Forum: Metamodel design for OO design for IoT </h3>
-								<p>The article by Fortino et al. (2015) discusses the design and application of a metamodel. We can apply this information to determine the strength and weaknesses of designing a metamodel for object oriented design of the internet of things (IoT). The metamodel can provide a standardised way of designing IoT systems which can help to reduce complexity. As well as it provide an abstract view of a system which can help developers understand the system in more detail. The drawbacks of this are that metamodels can add an additional level of complexity to the design process, while at the same time the opposite can occur where processes and features are generalised for the purpose of making a metamodel. The metamodel omit certain aspects of the system and not cover all aspects of IoT design such as the security, privacy and scalability. </p>
-								<p> Overall the design of metamodels for object-oriented design of the IoT can have many benefits, but it also requires consideration of its  weaknesses as well. </p>
-								<P><b><i> References: Fortino, G., Guerrieri, A., Russo, W. & Savaglio, C. (2015) Towards a Development Methodology for Smart Object-Oriented IoT Systems: A Metamodel Approach. 2015 IEEE International Conference on Systems, Man, and Cybernetics. 1297-1302. DOI: 10.1109/SMC.2015.231. </P></b></i>							
-								<br>
-					
-						
+<p> The input file was “test” which consisted the text “hello world” </p>
+<p> The output file was named “test123” and the chosen shift value was “3” </p>
+<p> The results text that was outputted to the Test123 file was: “khoor zruog” </p>
+<p><a href="https://github.com/dheeranc/SECURESP/tree/source/Cryptography"> source </a></p>
+<p><b><i> Reference: Cryptography with Python - Quick Guide (no date) Tutorials Point. Available at: https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_quick_guide.htm </i></b></p>
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<h3><u> Discussion Forum: Truecrypt</u></h3>
+								<p> Truecrypt was a free open-source encryption software that was used to create encrypted virtual disks, partitions, or entire storage devices. The software was developed by a group of anonymous developers, and it was known for its strong encryption capabilities and ease of use. development of TrueCrypt was abruptly halted in 2014, and the developers advised users to switch to other encryption software due to security concerns. Since then, various security audits have been conducted on TrueCrypt's source code, revealing some potential vulnerabilities.(Goodin, 2015)  TrueCrypt used a weak random number generator, which made the encryption keys more predictable and easier to crack. TrueCrypt did not support the latest encryption standards, which made it less secure compared to other encryption software. Some parts of TrueCrypt's code were found to be vulnerable to buffer overflow attacks, which could allow an attacker to execute arbitrary code on the system.TrueCrypt's source code was found to be difficult to understand which raised concerns about the possible presence of backdoors or intentional vulnerabilities.(Nygen, nd) Finally, trucrypt was last updated in 2014, and since then, no new updates or bug fixes have been released. Making it vulnerable to new security threats and issues and completely out of date. (Zhang et al, 2019) </p>
+<p> Due to the abandonment of the truecrypt project and the vulnerabilities not being addressed by the developers. I personally cannot recommend truecrypt for personal use. It has not been updated in over eight years and there are currently safer alternatives from well-respected software developers.  </p>
+
+<p><b><i> References: </p></b></i> 
+<li> Goodin , D. and T (2015) TrueCrypt is safer than previously reported, detailed analysis concludes, Ars Technica. Available at: https://arstechnica.com/information-technology/2015/11/truecrypt-is-safer-than-previously-reported-detailed-analysis-concludes/  </li>
+<li> Lijun Zhang, Xiaoyan Deng, and Cheng Tan. (2019). An Extensive Analysis of TrueCrypt Encryption Forensics. In Proceedings of the 3rd International Conference on Computer Science and Application Engineering (CSAE '19). Article 88, 1–6. https://doi.org/10.1145/3331453.3361328 </li>
+<li> TrueCrypt. (2014)  Available at: https://truecrypt.sourceforge.net/ </li>
+<li> nguyen, L. (no date) Security analysis of TrueCrypt. Available at: https://lisanqd.com/publication-truecrypt.html </li>
+
+
 						                        <hr />
 									<header class="major">
 										<h2> Unit 9: Developing an API for a Distributed Environment </h2>
