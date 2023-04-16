@@ -178,14 +178,25 @@ Python has a range of built-in input validation mechanisms, while in C, input va
 				<br>
 				<br>
 				<h3><u> Codio activities: Exploring Python tools and features </u></h3>
+				<h3> Activity 1 </h3>
 				<p> The code below was taken from the Codio - Buffer overflow in C workspace. It is a simple program that creates a buffer and then asks you for a name, and prints it back out to the screen. </p>
 				<span class="image main"><img src="pictures/codio1.png" alt="" /></span>
 				<p><a href="https://github.com/dheeranc/SECURESP/blob/source/Codio/bufoverflow.c">source code.</a></p>
 				<p> When I ran my name through the code as prompted it printed my name back to me as the output without any noticeable changes. When re-running this program using the ./bufoverflow command and this time entering a string of 10 letters the output message shown below was displayed. </p>
 				<span class="image main"><img src="pictures/codio.15.png" alt="" /></span>
 				<p> The displayed message indicated that the running of program was cancelled due to the act of overwriting the memory beyond the allocated stack frame which was caused due to the large number of characters in the string used. This type of error message is often caused by programming errors, such as buffer overflow or other memory-related bugs. These types of errors can lead to security vulnerabilities and should be fixed as soon as possible. </p>				
+				<br>
+				<br>
+				<h3> Activity 2</h3>
+				<p> The code shown below is taken from  Codio - Buffer overflow in Python workspace. </p>
+				<span class="image main"><img src="pictures/codio2.5.png" alt="" /></span>
+				<p><a href="https://github.com/dheeranc/SECURESP/blob/source/Codio/Overflow.py">source code.</a></p>
+				<p>The result is that the code will not run due to the Indexerror: list assignment index is out of order. By next installing pylint to the program by imputing the pip3 install pylint command into the terminal and then running it using the following command: pylint Overflow.py. The results are shown below: </p>
+				<span class="image main"><img src="pictures/codio2.png" alt="" /></span>
+				<p> When you run Pylint on your code, it generates a report that includes a score out of 10, based on the number and severity of issues found in your code. A score of 0/10 in Pylint indicates that your code has no detectable issues or violations according to Pylint's default configuration. This is the best possible score you can get and indicates that your code is clean and well-written according to Pylint's standards. Although the code was well-written this does not fix the issue of the index error stated earlier which was caused due to try to assign a value to an index that does not exist in a Python list. In other words, trying to access an index that is beyond the bounds of the list. </p>
 				
 				
+		
 				
 						<br>
 								
