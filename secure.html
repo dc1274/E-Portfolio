@@ -399,7 +399,7 @@ The ontologies discussed include those of the SOA (service oriented architecture
 <h3><u> Discussion Forum: Truecrypt</u></h3>
 								<p> Truecrypt was a free open-source encryption software that was used to create encrypted virtual disks, partitions, or entire storage devices. The software was developed by a group of anonymous developers, and it was known for its strong encryption capabilities and ease of use. development of TrueCrypt was abruptly halted in 2014, and the developers advised users to switch to other encryption software due to security concerns. Since then, various security audits have been conducted on TrueCrypt's source code, revealing some potential vulnerabilities.(Goodin, 2015)  TrueCrypt used a weak random number generator, which made the encryption keys more predictable and easier to crack. TrueCrypt did not support the latest encryption standards, which made it less secure compared to other encryption software. Some parts of TrueCrypt's code were found to be vulnerable to buffer overflow attacks, which could allow an attacker to execute arbitrary code on the system.TrueCrypt's source code was found to be difficult to understand which raised concerns about the possible presence of backdoors or intentional vulnerabilities.(Nygen, nd) Finally, trucrypt was last updated in 2014, and since then, no new updates or bug fixes have been released. Making it vulnerable to new security threats and issues and completely out of date. (Zhang et al, 2019) </p>
 <p> Due to the abandonment of the truecrypt project and the vulnerabilities not being addressed by the developers. I personally cannot recommend truecrypt for personal use. It has not been updated in over eight years and there are currently safer alternatives from well-respected software developers.  </p>
-
+<p><i> For the continuation of this dicussion go to Unit 9 </p></i>
 <p><b><i> References: </p></b></i> 
 <li> Goodin , D. and T (2015) TrueCrypt is safer than previously reported, detailed analysis concludes, Ars Technica. Available at: https://arstechnica.com/information-technology/2015/11/truecrypt-is-safer-than-previously-reported-detailed-analysis-concludes/  </li>
 <li> Lijun Zhang, Xiaoyan Deng, and Cheng Tan. (2019). An Extensive Analysis of TrueCrypt Encryption Forensics. In Proceedings of the 3rd International Conference on Computer Science and Application Engineering (CSAE '19). Article 88, 1–6. https://doi.org/10.1145/3331453.3361328 </li>
@@ -411,22 +411,34 @@ The ontologies discussed include those of the SOA (service oriented architecture
 									<header class="major">
 										<h2> Unit 9: Developing an API for a Distributed Environment </h2>
 									</header>
-								<p>The ninth unit is a continuation on testing approaches, it reiterates how consistent debugging and testing is vital for an effective development of a system. This unit introduces different types of testing, these are: manual, automated and black box testing. These are used to ensure a viable product after the development stage. </p>
-								<h3><u>Artefact: Errors and testing </u></h3>
-									<p>Cyclomatic complexity is one of the most commonly used metrics for assessing the complexity of an object oriented program. It can provide a qualitative measure of the independent paths present in a program. Although useful it doesn’t not provide full view of the complexity of a program as it does not take into account code semantics or the actual design of the program. There are alternative metrics that can be used separately or alongside cyclomatic complexity these are discussed below: </p>
-									<ol>
-									<p>Code lines, this is a simple metric which counts the total lines of code used in the program. Although this does not always give an accurate representation due to different programming languages and they differing designs of a program but it can still provide a simple way to measure the complexity and size. </p>
-										<p>The maintainability index uses multiple factors such as the cyclomatic complexity and code length to provide a metric of how simple it is to edit, maintain and update a program. The higher this index the easier it is to understand and modify. </p>
-										<p>The cohesion and coupling measure the degree to which different components of a program are connected together. High cohesion and low coupling are usually signs of a good design. </p>
-										<p> The general view that I’ve concluded from these paper is that the best metric depends on the situation, with the most effectively commonly being a combination of multiple metrics.  </p>
-								</ol>
-								<p><b><i> References: </p></b></i>
-									<li>Gujar, C.R. (2019) “Use and analysis on cyclomatic complexity in software development,” International Journal of Computer Applications Technology and Research, 8(5), pp. 153–156. /li>
-						<li> Tiwari, U. and Kumar, S. (2014) “Cyclomatic complexity metric for component based software,” ACM SIGSOFT Software Engineering Notes, 39(1), pp. 1–6./li>
-						<li> Brij, & Goel, Dr. Brij Mohan & Pradeep, Prof & Bhatia, Pradeep. (2013). An Overview of Various Object Oriented Metrics. International Journal of Information Technology and Systems (IJITS) - ISSN 2277–9825. 2. 18-27 </li>
+								
+<p> Unit nine focuses on the development of skills useful for development of API for python. 
+CRUD operations can be used to implement the functionality of an API. An API typically defines a set of endpoints that can be used to perform specific operations on data. </p>
+<p> CRUD is an acronym that stands for Create, Read, Update, and Delete. It is a set of basic operations that are commonly used when working with databases and other types of data storage. Python provides several libraries and frameworks for working with databases and data storage. CRUD operations can be implemented using Python to interact with databases </p>
+<ol>
+	<li> Create: To create new records in a database, you can use Python's database API to connect to the database and execute an INSERT query. </li>
+	<li> Read: To retrieve data from a database, you can use Python's database API to execute a SELECT query. </li>
+	<li> Update: To update existing records in a database, you can use Python's database API to execute an UPDATE query </li>
+	<li> Delete: To delete records from a database, you can use Python's database API to execute a DELETE query </li>
+	</ol>
+<br>
+<p><b><i> References: What is crud? (2023) Codecademy. Available at: https://www.codecademy.com/article/what-is-crud </p></b></i>
+<br>
+<br>
+<h3><u> Forum discussion: Summary Post </u></h3>
+<p> This is a continuation of the truecrypt discussion where I will add more information and an ontology diagram detailing the weaknesses of truecrypt as I previously missed this aspect of the initial discussion. </p>
+<p> Truecrypt was a free open-source encryption software that was used to create encrypted virtual disks, partitions, or entire storage devices. The software was developed by a group of anonymous developers and it was at the time known for its strong encryption capabilities and ease of use. Development of TrueCrypt was abruptly halted in 2014, and the developers advised users to switch to other encryption software due to the multitude of security concerns. </p>
+<p> 11 weaknesses were detailed in the study by Junestan & Guigo, 2014 these span in severity from low to medium with 3 of these being just informative. Below shows the ontology design made to showcase the weakness of truecrypt arranged by different the severity. </p>
+
+
+
+
+<span class="image main"><img src="pictures/UNIT9.png" alt="" /></span>
+<br>
+								<p><b><i> References: Junestam, A. and Guigo, N. (2014) “Open Crypto Audit Project TrueCrypt,” iSEC Partners Final Report [Preprint]. </p></b></i>
+									
+				
 				<br>
-				
-				
 										
 										
 							
