@@ -175,8 +175,18 @@ Python has a range of built-in input validation mechanisms, while in C, input va
 						<li> Hassan,M et al. (2018). Quantitative Assessment on Broken Access Control Vulnerability in Web Applications </li>
 				<li> OWASP (2022) Broken access control, Broken Access Control | OWASP Foundation. Available at: https://owasp.org/www-community/Broken_Access_Control  </li>
 				<li> Priebe, T. et al. (2004) “A pattern system for access control,” IFIP International Federation for Information Processing, pp. 235–249. Available at: https://doi.org/10.1007/1-4020-8128-6_16 </li>
+				<br>
+				<br>
+				<h3><u> Codio activities: Exploring Python tools and features </u></h3>
+				<p> The code below was taken from the Codio - Buffer overflow in C workspace. It is a simple program that creates a buffer and then asks you for a name, and prints it back out to the screen. </p>
+				<span class="image main"><img src="pictures/codio1.png" alt="" /></span>
+				<p><a href="https://github.com/dheeranc/SECURESP/blob/source/Codio/bufoverflow.c">source code.</a></p>
+				<p> When I ran my name through the code as prompted it printed my name back to me as the output without any noticeable changes. When re-running this program using the ./bufoverflow command and this time entering a string of 10 letters the output message shown below was displayed. </p>
+				<span class="image main"><img src="pictures/codio1.5.png" alt="" /></span>
+				<p> The displayed message indicated that the running of program was cancelled due to the act of overwriting the memory beyond the allocated stack frame which was caused due to the large number of characters in the string used. This type of error message is often caused by programming errors, such as buffer overflow or other memory-related bugs. These types of errors can lead to security vulnerabilities and should be fixed as soon as possible. </p>				
 				
-					
+				
+				
 						<br>
 								
 										
