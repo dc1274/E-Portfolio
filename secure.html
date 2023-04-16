@@ -435,38 +435,32 @@ The ontologies discussed include those of the SOA (service oriented architecture
 									<header class="major">
 										<h2> Unit 10: From Distributed Computing to Microarchitectures </h2>
 									</header>
-									<p>The tenth unit focuses on the various methods and reasons for testing and debugging these link directly to the second assignment of module ‘system implementation’. </p>
-						
-						<h3><u>Artefact: Testing </u></h3>
-									<p> Testing and debugging are essential for software development. The testing phase is the process of identifying defects and errors in the software, while the debugging phase is the process of fixing said errors. The following are the stages are the different types of testing and debugging that can be implemented: </p>
-					
-						<ol>
-							<p> <b>Unit Testing</b>, is a type of testing that tests the individual units or components of the software. It is usually conducted in the coding phase of development. The purpose of unit testing is to identify and fix errors and defects in individual units before the integration into a larger system.	</p>	
-							<p> <b>Integration Testing</b>, involves testing the interaction between differing units or components of the software. This type of testing helps identify defects that arise due to interactions between components.</p>										
-							<p> <b>System Testing</b>, is the process of testing the entire software system as a whole to ensure that it meets the specified requirements. </p>
-							<p> <b>Acceptance Testing</b>, is the process of testing the software to ensure that it meets the user's requirements and expectations. It is usually conducted via the client.</p>
-							<p> <b>Performance Testing</b>, is a type of testing that tests the performance and responsiveness of the software under different conditions.</p>
-							<p> <b>Security Testing</b>, is a type of testing that tests the security of the software and identifies any vulnerabilities or weaknesses that may be exploited. </p>
-							<p> <b>Debugging</b>, Debugging is the process of identifying and fixing defects and errors in the software. </p>
-						</ol>	
-						<p> In conclusion the testing and debugging phase is critical in ensuring the quality and reliability of the software, and it should be conducted thoroughly to reduce the risk of defects and errors in software. </p>						
-						
-						<br>
-						<h3> Discussion forum: Summary post </h3>
-						<p> After the initial discussion posts from my peers about the topic of object oriented design of IoT system, it seems the general consensus was that metamodels present value to the design process however does have some major drawbacks. </p>
-						<p> Two major strengths statued in the initial post are as follows. The metamodel can provide a standardised way of designing IoT systems which can help to reduce complexity. As well as it provide an abstract view of a system which can help developers understand the system in more detail. Something that I initially missed in my initial post was some other  key benefits of metamodel design which links directly to OOP, that being reusability and flexibility.
-The metamodel can help identify common patterns and reusable components of the system which can help to reduce the development time and resources. While the meta model can support multiple implementations and platforms. This can improve the flexibility and adaptability. </p>
-						<p> The rest of my views regarding the weakness remain relatively the same these being, that metamodels can add an additional level of complexity to the design process, while at the same time the opposite can occur where processes and features are generalised for the purpose of making a metamodel. </p>
-						
-						
 									
-									<P><b><i>Reference: Fortino, G., Guerrieri, A., Russo, W. & Savaglio, C. (2015) Towards a Development Methodology for Smart Object-Oriented IoT Systems: A Metamodel Approach. 2015 IEEE International Conference on Systems, Man, and Cybernetics</i></b></P>
+						<h3><u>Artefact: Faceted Data</u></h3>
+<p> Schmitz et al (2016) discusses an approach to protect systems from data leakage, called "Faceted Data". The basic idea behind Faceted Data is to create a security layer that applies a set of tags or "facets" to different data elements in a system, such as files or messages. These facets can represent different aspects of the data, such as its classification and ownership. </p>
+<p><u> Do you think this is a good approach to protect systems from data leakage? What are the pros and cons? </u></p>
+<p> The Faceted Data approach has several potential benefits for protecting systems from data leakage. Firstly, it provides a flexible and dynamic way to manage data access and control. New facets can be added or removed as needed, and policies can be updated or refined without the need to modify the underlying data structures. Secondly, Faceted Data can help to prevent insider threats by limiting access to sensitive data and detecting unusual or suspicious behaviour. Thirdly, Faceted Data can help to address the challenge of data classification and labelling, which is a key requirement in many data protection regulations and standards.
+However, there are also some potential drawbacks to the Faceted Data approach. Firstly, it may require significant changes to the existing data management and access control systems, which could be costly and time-consuming. Secondly, the effectiveness of Faceted Data may depend on the accuracy and consistency of the facets and the policies, which could be challenging to maintain in large and complex systems. Thirdly, Faceted Data may also pose new security risks if the facets or policies are misconfigured or compromised, leading to unauthorized access or leakage of sensitive data. </p>
+<p> In conclusion, while the Faceted Data approach proposed by Schmitz et al (2016) has some potential benefits for protecting systems from data leakage, it also has some potential drawbacks that need to be carefully considered. The approach may be most effective when used in combination with other security measures, such as encryption, access controls, and monitoring.  </p>
+<br>
+<p><u> Create an outline design of how you would create such a system in Python. </p></u>
+
+<p> Creating a Faceted Data system in Python would involve several key components, including data tagging, access control, policy enforcement, and auditing. Below outlines how such a system could be created: </p>
+<ol>
+	<li> Data tagging, by developing a tagging system that allows for the assignment of facets to different data elements. This could involve creating a metadata file for each data element that stores the facets as key-value pairs. </li>
+	<li> Developing an access control system that checks the facets of a data element against a set of policies and user attributes to determine whether access should be granted or denied. This would involve creating a set of rules or conditions that define which facets are required for access and which users are authorized to access them.</li>
+	<li> Develop a policy enforcement system that applies the access control rules to each data element and user request, and logs any violations or exceptions. </li>
+	<li> Next by developing an auditing system that tracks all access attempts and modifications to the data and provides detailed reports or alerts to the administrators. This could involve creating a logging mechanism that records all access events, including the user, time and location. </li>
+	<li> Integrating the Faceted Data system with the existing data storage and application frameworks, such as databases, file systems, email servers, or messaging platforms. This involves creating plugins or adapters that allow the system to interact with different data sources. </li>
+	</ol>
+<p> Overall, implementing a Faceted Data system in Python would require a combination of data modelling and system integration. As well as a complete understanding of the numerous security principles. It would also require lots of testing and validation to ensure that the system is effective and reliable.  </p>
+
+
+	
+	
+									<P><b><i>Reference:Schmitz, T. et al. (2016) “Faceted dynamic information flow via control and Data Monads,” Lecture Notes in Computer Science, pp. 3–23. Available at: https://doi.org/10.1007/978-3-662-49635-0_1. </i></b></P>
 				<br>
-						<h3> Packaging and testing </h3>
-						<p> The following program shows the use of appropriate comments and documentation to support sample code given. this refers to the activity 1 and 2 of seminar preperation.						
-						<span class="image main"><img src="pictures/OOUnit10.png" alt="" /></span>
-									<p><a href="https://github.com/dheeranc/OOP-coding-/blob/source/python%20add%20comments">source code.</a></p>
-									<br>
+						
 							
 							
 							
